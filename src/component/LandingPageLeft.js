@@ -1,5 +1,5 @@
 import Register from '../component/Register';
-import Login from '../component/Login';
+import { Link } from 'react-router-dom'
 
 function LandingPageLeft() {
     return(
@@ -9,7 +9,7 @@ function LandingPageLeft() {
             <p>Join now, share your creations with another people and enjoy other creation.</p>
             <div className="lp-tombol">
                 <div>
-                    <Login/>
+                <Link to={{pathname: "/login", state: { modal: true }, }} className="login-auth-button">Login</Link>
                 </div>
                 <div>
                     <Register/>
