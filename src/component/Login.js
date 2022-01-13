@@ -10,7 +10,7 @@ function Login() {
   return (
     <>
       <Button className="login-auth-button" onClick={handleShow}>
-        Register
+        Login
       </Button>
 
       <Modal dialogClassName="info-modal" show={show} onHide={handleClose}>
