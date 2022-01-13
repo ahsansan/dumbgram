@@ -1,7 +1,7 @@
 import Register from '../component/Register';
 import Login from '../component/Login'
 
-function LandingPageLeft() {
+function Welcome() {
     return(
 		<div>
             <h1 className="lp-dumbgram">DumbGram</h1>
@@ -19,4 +19,4 @@ function LandingPageLeft() {
     )
 }
 
-export default LandingPageLeft;
+export default Welcome;

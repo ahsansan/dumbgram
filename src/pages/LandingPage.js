@@ -1,15 +1,15 @@
-import LandingPageLeft from '../component/LandingPageLeft';
-import LandingPageRight from '../component/LandingPageRight';
+import Welcome from '../component/Welcome';
+import Explore from '../component/Explore';
 
 function LandingPage() {
     return(
         <div className="lp-bg">
             <div className="lp-container">
                 <div className="lp-left">
-                <LandingPageLeft/>
+                <Welcome/>
                 </div>
                 <div className="lp-right">
-                <LandingPageRight/>
+                <Explore/>
                 </div>
             </div>
         </div>

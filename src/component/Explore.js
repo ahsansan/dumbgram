@@ -1,4 +1,4 @@
-function LandingPageRight() {
+function Explore() {
     return(
 		<div>
             <div className="lp-galeri">
@@ -21,4 +21,4 @@ function LandingPageRight() {
     )
 }
 
-export default LandingPageRight;
+export default Explore;
