@@ -1,0 +1,155 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+    background-color: black!important;
+    color: white!important;
+	font-family: Avenir!important;
+}
+
+/* Landing Page */
+
+.lp-bg {
+    padding: 100px 50px;
+    width: 100%;
+}
+
+.lp-container {
+    display: flex;
+    width: 100%;
+}
+
+.lp-left {
+    flex: 45%;
+    padding: 25px;
+}
+
+.lp-dumbgram {
+    font-family: Rochester;
+    color: #fff;
+    font-size: 96px;
+    background: -webkit-linear-gradient(90deg, #4DD4F7 18.8%, #9090FB 40.43%, #FF6B81 60.14%, #FBDF63 79.36%, #D9F0F4 97.15%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0px 0px 25px #CECECE;
+    padding-left: 20px;
+    padding-bottom: 50px;
+}
+
+.lp-left h2 {
+    font-size: 56px;
+    margin-bottom: 15px;
+}
+
+ .lp-left p {
+    font-size: 18px;
+    color: #6A6A6A;
+    margin-bottom: 15px;
+}
+
+ .lp-left .lp-tombol {
+    display: flex;
+    justify-content: left;
+}
+
+ .lp-left .lp-tombol div {
+     padding-right: 25px;
+}
+
+.lp-right {
+    flex: 55%;
+}
+
+.lp-right .lp-galeri {
+    display: flex;
+    flex-direction: row;
+}
+
+.lp-right .lp-galeri .galerikiri {
+    flex: 1;
+}
+
+.lp-right .lp-galeri .galeritengah {
+    flex: 1;
+}
+
+.lp-right .lp-galeri .galerikanan {
+    flex: 1;
+}
+
+.lp-right img {
+    padding: 5px 5px;
+    width: 100%;
+}
+
+/* Form Login Register */
+
+.info-modal .modal-content {
+    background-color: #1F1F1F!important;
+    border: 0 solid black!important;
+    border-radius: 15px!important;
+    padding: 30px 20px!important;
+}
+
+.login-auth-button {
+    background-color: white; /* For browsers that do not support gradients */
+    background-image: linear-gradient(90deg, #4DD4F7 0%, #9090FB 36.46%, #FF6B81 71.35%, #FBDF63 100%);
+    padding: 10px 45px!important;
+    border: 0px solid black!important;
+    border-radius: 5px!important;
+    font-family: Avenir!important;
+    font-weight: 500!important;
+    font-size: 17px!important;
+    color: white!important;
+}
+
+.register-auth-button {
+    background-color: black!important; /* For browsers that do not support gradients */
+    padding: 10px 45px!important;
+    border-radius: 5px!important;
+    
+    font-weight: 500!important;
+    font-size: 17px!important;
+    color: white!important;
+    border: 0px solid black!important;
+}
+
+.form-auth-h {
+    margin-bottom: 36px!important;
+    font-weight: 700!important;
+    color: white!important;
+}
+
+.form-auth-input {
+    margin-bottom: 20px!important;
+    background-color: #D2D2D240!important;
+    border: 2px solid #D2D2D2!important;
+    border-radius: 5px!important;
+    font-weight: 400!important;
+    font-size: 17px!important;
+    color: #B1B1B1!important;
+    padding: 10px!important;
+    width: 100%!important;
+    box-sizing: border-box!important;
+}
+
+.form-auth-button {
+    background-color: white; /* For browsers that do not support gradients */
+    background-image: linear-gradient(90deg, #4DD4F7 0%, #9090FB 36.46%, #FF6B81 71.35%, #FBDF63 100%);
+    padding: 15px!important;
+    width: 100%!important;
+    border: 0px solid black!important;
+    border-radius: 5px!important;
+    font-weight: 500!important;
+    font-size: 17px!important;
+    color: white!important;
+    margin-bottom: 20px!important;
+}
+
+.form-auth-p {
+    text-align: center!important;
+    color: #B1B1B1!important;
+    font-size: 18px!important;
+}
