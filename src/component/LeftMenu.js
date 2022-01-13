@@ -10,7 +10,7 @@ function LeftMenu() {
     }];
 
     return (
-        <div className="page-bg">
+        <div className="container">
             <div className="left-menu-container">
             <div>
                 <h1 className="left-menu-dumbgram">DumbGram</h1>

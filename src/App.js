@@ -1,11 +1,11 @@
 import './styles/styles.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import LeftMenu from './component/LeftMenu';
+import LandingPage from './pages/LandingPage';
 
 function App() {
   return (
     <div>
-      <LeftMenu />
+      <LandingPage />
     </div>
   );
 }

@@ -62,26 +62,28 @@ body {
     flex: 55%;
 }
 
-.lp-right .lp-galeri {
+.lp-galeri {
     display: flex;
     flex-direction: row;
 }
 
-.lp-right .lp-galeri .galerikiri {
+.lp-galeri .galerikiri {
     flex: 1;
 }
 
-.lp-right .lp-galeri .galeritengah {
+.lp-galeri .galeritengah {
     flex: 1;
 }
 
-.lp-right .lp-galeri .galerikanan {
+.lp-galeri .galerikanan {
     flex: 1;
 }
 
-.lp-right img {
+.lp-galeri img {
     padding: 5px 5px;
     width: 100%;
+    border: 0.5px solid black;
+    border-radius: 10px;
 }
 
 /* Form Login Register */
@@ -99,7 +101,6 @@ body {
     padding: 10px 45px!important;
     border: 0px solid black!important;
     border-radius: 5px!important;
-    font-family: Avenir!important;
     font-weight: 500!important;
     font-size: 17px!important;
     color: white!important;
@@ -109,7 +110,6 @@ body {
     background-color: black!important; /* For browsers that do not support gradients */
     padding: 10px 45px!important;
     border-radius: 5px!important;
-    
     font-weight: 500!important;
     font-size: 17px!important;
     color: white!important;
@@ -156,9 +156,81 @@ body {
 
 /* Home After Login */
 
-.page-bg {
+.container {
     padding: 25px 50px;
     width: 100%;
+}
+
+/* Nav */
+
+.nav-container {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    padding: 25px 25px;
+    flex-direction: inline;
+}
+
+.home-left {
+    flex: 30%;
+}
+
+.home-right {
+    flex: 70%;
+    border-left: 1px solid grey;
+    height: 100%;
+    padding-left: 25px;
+}
+
+.nav-left {
+    flex: 1;
+}
+
+.form-search-input {
+    background-color: #D2D2D240;
+    border: 2px solid #D2D2D2;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #B1B1B1;
+    padding: 8px;
+    width: 70%;
+    box-sizing: border-box;
+}
+
+.nav-right {
+    flex: 1;
+}
+
+.nav-right-menu {
+    display: flex;
+    flex-direction: inline;
+    justify-content: end;
+}
+
+.nav-right-menu ul {
+    list-style: none;
+}
+
+.nav-right-menu ul li {
+    display: inline-block;
+    cursor: pointer;
+    padding: 5px 15px;
+}
+
+.nav-right-menu ul li a {
+    text-decoration: none;
+}
+
+.create-post {
+    background-color: white; /* For browsers that do not support gradients */
+    background-image: linear-gradient(90deg, #4DD4F7 0%, #9090FB 36.46%, #FF6B81 71.35%, #FBDF63 100%);
+    padding: 10px 20px!important;
+    border: 0px solid black!important;
+    border-radius: 5px!important;
+    font-weight: 500!important;
+    font-size: 17px!important;
+    color: white!important;
 }
 
 /* Left Menu */
@@ -166,8 +238,6 @@ body {
 .left-menu-container {
     width: 350px;
     padding-right: 50px;
-    border-right: 1px solid grey;
-    height: 100%;
 }
 
 .left-menu-container ul li {
@@ -204,6 +274,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .left-menu-up img {
@@ -298,5 +369,3 @@ body {
 .left-menu-down ul li img {
     margin-right: 25px;
 }
-
-/* Header */
