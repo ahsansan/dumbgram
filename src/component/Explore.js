@@ -1,26 +1,26 @@
+// Custom Css
 import '../styles/components/explore.css'
+// Mansory Element
+import Mansory from './MansoryForExplore'
 
-function Explore() {
+function ExploreMansory() {
+
+    const imageUrls = [
+        '/images/photos/Rectangle 6.png',
+        '/images/photos/Rectangle 5.png',
+        '/images/photos/Rectangle 10.png',
+        '/images/photos/Rectangle 3.png',
+        '/images/photos/Rectangle 9.png',
+        '/images/photos/Rectangle 4.png',
+        '/images/photos/Rectangle 8.png',
+        '/images/photos/Rectangle 12.png',
+    ]
+
     return(
-		<div>
-            <div className="exp-galeri">
-                <div className="galerikiri">
-                    <img src={process.env.PUBLIC_URL + '/images/landingpage/Rectangle 6.png'}/>
-                    <img src={process.env.PUBLIC_URL + '/images/landingpage/Rectangle 5.png'}/>
-                    <img src={process.env.PUBLIC_URL + '/images/landingpage/Rectangle 10.png'}/>
-                </div>
-                <div className="galeritengah">
-                    <img src={process.env.PUBLIC_URL + '/images/landingpage/Rectangle 3.png'}/>
-                    <img src={process.env.PUBLIC_URL + '/images/landingpage/Rectangle 9.png'}/>
-                </div>
-                <div className="galerikanan">
-                    <img src={process.env.PUBLIC_URL + '/images/landingpage/Rectangle 4.png'}/>
-                    <img src={process.env.PUBLIC_URL + '/images/landingpage/Rectangle 8.png'}/>
-                    <img src={process.env.PUBLIC_URL + '/images/landingpage/Rectangle 12.png'}/>
-                </div>
-            </div>
+		<div className='mansory-container-exp'>
+            <Mansory imageUrls={imageUrls}></Mansory>
         </div>
     )
 }
 
-export default Explore;
+export default ExploreMansory;

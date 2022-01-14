@@ -1,20 +1,20 @@
 // Custom Css
-import '../styles/components/left-menu.css'
+import '../styles/components/profile.css'
 
 // FontAwesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEdit, faSignInAlt, faHome, faCompass } from '@fortawesome/free-solid-svg-icons';
+import { faSignInAlt, faHome, faCompass } from '@fortawesome/free-solid-svg-icons';
 
 function LeftMenu() {
 
     const profiles = [{
-        photo: "/images/photos/Lisa.png",
-        name: "Lisa",
-        username: "@lalalisa_m",
-        post: "200",
-        followers: "51.2M",
-        following: "1",
-        bio: "Rapper in Black Pink, Brand Ambasador Penshoppe."
+        photo: "/images/photos/Zayn.png",
+        name: "Zayn Malik",
+        username: "@zayn",
+        post: "143",
+        followers: "40.5M",
+        following: "25",
+        bio: "Nobody is Listening Out Now! www.inzayn.com"
     }];
 
     return (
@@ -25,9 +25,6 @@ function LeftMenu() {
             </div>
             {profiles.map((profile, index) => (
             <div>
-                <div className="left-menu-edit-container">
-                    <a href="/edit-profile"><FontAwesomeIcon className="icon-notifikasi" icon={faEdit} /></a>
-                </div>
                 <div className="left-menu-up">
                 <div>
                     <img src={process.env.PUBLIC_URL + `${profile.photo}`} alt="Profile" />
@@ -35,6 +32,12 @@ function LeftMenu() {
                     <div>
                         <h2>{profile.name}</h2>
                         <p className="username">{profile.username}</p>
+                    </div>
+                    <div className='tombol-action'>
+                        <ul>
+                            <li><a href="/messeges" className='login-messeges-button'>Messeges</a></li>
+                            <li><a href="/unfollow" className='login-unfollow-button'>Unfollow</a></li>
+                        </ul>
                     </div>
                     <div className="left-menu-statsprofile">
                         <div className="left-menu-count">

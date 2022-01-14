@@ -1,23 +1,24 @@
-import LeftMenu from '../component/LeftMenu';
+import Profile from '../component/Profile';
 import Header from '../component/Header';
-import Explore from '../component/Explore';
+import Feed from '../component/Feed';
 
-function ExplorePage() {
+function ProfilePage() {
     return(
         <div className='nav-container'>
             <div className='home-left'>
-                <LeftMenu/>
+                <Profile/>
             </div>
             <div className='home-right'>
                 <div>
                     <Header/>
                 </div>
+                <h1 className='ps-5'>Hey, Zayn</h1>
                 <div className='d-flex justify-content-center'>
-                    <Explore/>
+                    <Feed/>
                 </div>
             </div>
         </div>
     )
 }
 
-export default ExplorePage;
+export default ProfilePage;

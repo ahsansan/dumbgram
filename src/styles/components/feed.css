@@ -1,0 +1,71 @@
+.masonry-style-feed {
+    column-gap: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: masonry;
+    width: 100%;
+}
+
+.images {
+    display: block;
+    width: 90%;
+    margin: 15px;
+    border-radius: 5px;
+}
+
+.feed-container {
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    flex-direction: column;
+}
+
+.feed-gambar {
+    flex: 1;
+}
+
+.feed-keterangan {
+    flex: 1;
+}
+
+.prof-box {
+    width: 100%;
+    display: flex;
+    flex-direction: inline;
+}
+
+.profile {
+    flex:1;
+    display: flex;
+    flex-direction: inline;
+}
+
+.card-profiles {
+    margin-left:15px ;
+    margin-right: 15px;
+    width: 30px;
+    height: 30px;
+}
+
+.icon-container {
+    flex:1;
+    display: flex;
+    justify-content: end;
+}
+
+.card-icon {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.navlike {
+    text-align: end;
+    padding-right: 10px;
+}
+
+.like-total {
+    font-size: 14;
+    font-weight: 800;
+    color: #ABABAB
+}

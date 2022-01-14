@@ -1,6 +1,6 @@
 import LeftMenu from '../component/LeftMenu';
 import Header from '../component/Header';
-import Explore from '../component/Explore';
+import Feed from '../component/Feed';
 
 function ExplorePage() {
     return(
@@ -13,7 +13,7 @@ function ExplorePage() {
                     <Header/>
                 </div>
                 <div className='d-flex justify-content-center'>
-                    <Explore/>
+                    <Feed/>
                 </div>
             </div>
         </div>

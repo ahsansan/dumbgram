@@ -46,6 +46,13 @@
     text-decoration: none;
 }
 
+.icon-notifikasi {
+    color: #ABABAB;
+    font-size: 25px;
+    margin-right: 20px;
+    margin-top: 5px;
+}
+
 .create-post {
     background-color: white;
     background-image: linear-gradient(90deg, #4DD4F7 0%, #9090FB 36.46%, #FF6B81 71.35%, #FBDF63 100%);
@@ -55,4 +62,22 @@
     font-weight: 500!important;
     font-size: 17px!important;
     color: white!important;
+}
+
+.plusquar {
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-right: 7px !important;
+    padding-left: 7px !important;
+}
+
+.cariFeeds {
+    width: 350px !important;
+    background-color: rgba(210, 210, 210, 0.25);
+    border: none;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    margin-top: 5px;
 }
