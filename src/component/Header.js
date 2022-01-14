@@ -1,3 +1,5 @@
+import '../styles/components/header.css'
+
 function Header() {
     return (
         <div className="nav-container">

@@ -1,6 +1,9 @@
+import '../styles/components/left-menu.css'
+
 function LeftMenu() {
 
     const profiles = [{
+        photo: "/images/landingpage/Rectangle 4.png",
         name: "Lisa",
         username: "@lalalisa_m",
         post: "200",
@@ -22,7 +25,7 @@ function LeftMenu() {
                 </div>
                 <div className="left-menu-up">
                 <div>
-                    <img src={process.env.PUBLIC_URL + '/images/landingpage/Rectangle 4.png'} alt="Profile" />
+                    <img src={process.env.PUBLIC_URL + `${profile.photo}`} alt="Profile" />
                 </div>
                     <div>
                         <h2>{profile.name}</h2>
@@ -30,22 +33,16 @@ function LeftMenu() {
                     </div>
                     <div className="left-menu-statsprofile">
                         <div className="left-menu-count">
-                            <div className="left-menu-vlright">
                             <p className="head">Post</p>
                             <p className="content">{profile.post}</p>
-                            </div>
                         </div>
-                        <div className="left-menu-count">
-                            <div className="left-menu-vldouble">
+                        <div className="left-menu-count-center">
                             <p className="head">Followers</p>
                             <p className="content">{profile.followers}</p>
-                            </div>
                         </div>
                         <div className="left-menu-count">
-                            <div className="left-menu-vlleft">
                             <p className="head">Following</p>
                             <p className="content">{profile.following}</p>
-                            </div>
                         </div>
                     </div>
                 </div>

@@ -1,7 +1,9 @@
+import '../styles/components/explore.css'
+
 function Explore() {
     return(
 		<div>
-            <div className="lp-galeri">
+            <div className="exp-galeri">
                 <div className="galerikiri">
                     <img src={process.env.PUBLIC_URL + '/images/landingpage/Rectangle 6.png'}/>
                     <img src={process.env.PUBLIC_URL + '/images/landingpage/Rectangle 5.png'}/>

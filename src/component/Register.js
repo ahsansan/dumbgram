@@ -1,5 +1,6 @@
 import {useState} from "react";
 import { Form, Button, Modal } from 'react-bootstrap';
+import '../styles/components/auth.css'
 
 function Register() {
     const [show, setShow] = useState(false);
