@@ -24,7 +24,7 @@ function LeftMenu() {
                 <img src={process.env.PUBLIC_URL + '/images/DumbGramIcon.png'} alt="DumbGram" />
             </div>
             {profiles.map((profile, index) => (
-            <div>
+            <div key={index}>
                 <div className="left-menu-edit-container">
                     <a href="/edit-profile"><FontAwesomeIcon className="icon-notifikasi" icon={faEdit} /></a>
                 </div>
@@ -64,7 +64,7 @@ function LeftMenu() {
                 <div className="left-menu-down">
                 <hr />
                 <ul>
-                    <li><a href="/logout"><FontAwesomeIcon className="icon-notifikasi" icon={faSignInAlt} /> Logout</a></li>
+                    <li><a href="/"><FontAwesomeIcon className="icon-notifikasi" icon={faSignInAlt} /> Logout</a></li>
                 </ul>
                 </div>
             </div>

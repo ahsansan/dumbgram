@@ -18,7 +18,7 @@ export default function MansoryForFeed(props) {
                             <div className='prof-box'>
                                 <div className='profile'>
                                     <img src={process.env.PUBLIC_URL + `${feed.ppuploader}`} className='card-profiles' alt='pp' />
-                                    <p className='post-name'>{feed.uploader}</p>
+                                    <p className='post-name'><a href="/profile">{feed.uploader}</a></p>
                                 </div>
                                 <div className='icon-container'>
                                     <FontAwesomeIcon className='card-icon' icon={faHeart}/>

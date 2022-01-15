@@ -48,6 +48,13 @@
     height: 30px;
 }
 
+.post-name a {
+    text-decoration: none;
+    font-size: 14;
+    font-weight: 800;
+    color: #ABABAB;
+}
+
 .icon-container {
     flex:1;
     display: flex;
@@ -67,5 +74,5 @@
 .like-total {
     font-size: 14;
     font-weight: 800;
-    color: #ABABAB
+    color: #ABABAB;
 }

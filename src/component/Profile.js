@@ -67,7 +67,7 @@ function LeftMenu() {
                 <div className="left-menu-down">
                 <hr />
                 <ul>
-                    <li><a href="/logout"><FontAwesomeIcon className="icon-notifikasi" icon={faSignInAlt} /> Logout</a></li>
+                    <li><a href="/"><FontAwesomeIcon className="icon-notifikasi" icon={faSignInAlt} /> Logout</a></li>
                 </ul>
                 </div>
             </div>

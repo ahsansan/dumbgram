@@ -26,12 +26,14 @@ function Login(props) {
       <Modal.Title className="form-auth-h">Login</Modal.Title>
         <Form>
             <Form.Group>
-              <Form.Control className="form-auth-input" type="email" id="email" placeholder="Email"/>
-              <Form.Control className="form-auth-input" type="password" name="password" id="password" placeholder="Password"/>
+              <Form.Control className="form-auth-input" type="email" name="email" id="email" placeholder="Email" autoComplete="false"/>
+            </Form.Group>
+            <Form.Group>
+              <Form.Control className="form-auth-input" type="password" name="password" id="password" placeholder="Password" autoComplete="false"/>
+            </Form.Group>
               <a href="/feed"><Button className="form-auth-button">Login</Button></a>
-              <span onClick={handleModalRegister} style={{ textDecoration: "none" }}><p className="form-auth-p">Don't have an account? Click Here</p></span>
-              </Form.Group>
           </Form>
+          <span onClick={handleModalRegister} style={{ textDecoration: "none" }}><p className="form-auth-p">Don't have an account? Click Here</p></span>
         </Modal.Body>
       </Modal>
     </>
