@@ -28,7 +28,7 @@ function Login(props) {
             <Form.Group>
               <Form.Control className="form-auth-input" type="email" id="email" placeholder="Email"/>
               <Form.Control className="form-auth-input" type="password" name="password" id="password" placeholder="Password"/>
-              <Button className="form-auth-button">Login</Button>
+              <a href="/feed"><Button className="form-auth-button">Login</Button></a>
               <span onClick={handleModalRegister} style={{ textDecoration: "none" }}><p className="form-auth-p">Don't have an account? Click Here</p></span>
               </Form.Group>
           </Form>

@@ -57,7 +57,7 @@ function LeftMenu() {
                 <div className="left-menu-down">
                 <hr />
                     <ul>
-                        <li><a href="/"><FontAwesomeIcon className="icon-notifikasi" icon={faHome} /> Home</a></li>
+                        <li><a href="/feed"><FontAwesomeIcon className="icon-notifikasi" icon={faHome} /> Home</a></li>
                         <li><a href="/explore"><FontAwesomeIcon className="icon-notifikasi" icon={faCompass} /> Explore</a></li>
                     </ul>
                 </div>

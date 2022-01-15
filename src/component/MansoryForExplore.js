@@ -1,3 +1,4 @@
+// Custom Css
 import '../styles/components/explore.css'
 
 export default function MansoryForExplore(props) {
