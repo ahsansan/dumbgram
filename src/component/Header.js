@@ -9,7 +9,7 @@ function Header() {
     return (
         <div className="nav-container">
             <div className="nav-left">
-                <input type="text" className="form-search-input" placeholder='&#xF002; Search'/>
+                <input type="text" className="form-search-input" placeholder='&#xF002; 𝗦𝗲𝗮𝗿𝗰𝗵'/>
             </div>
             <div className="nav-right">
                <div className="nav-right-menu">

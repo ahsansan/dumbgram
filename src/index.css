@@ -21,3 +21,8 @@ code {
   font-family: 'Avenir';
   src: local('Avenir'), url(./fonts/Avenir.otf) format('truetype');
 }
+
+@font-face {
+  font-family: 'FontAwesomeSolid';
+  src: local('Avenir'), url(./fonts/FontAwesomeSolid.otf) format('truetype');
+}
