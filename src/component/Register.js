@@ -1,7 +1,10 @@
+// Hook
 import { useState } from "react";
-import { Form, Button } from "react-bootstrap";
-import Modal from "react-bootstrap/Modal";
+// Bootstrap
+import { Form, Button, Modal } from "react-bootstrap";
+// Custom CSS
 import "../styles/components/auth.css";
+// Import Component
 import Login from "./Login";
 
 function Register(props) {
@@ -39,7 +42,7 @@ function Register(props) {
   };
 
   return (
-    <>
+    <div>
       {/* Modal */}
       {showLogin ? <Login isOpen={true} /> : null}
       <Modal dialogClassName="info-modal" show={show} onHide={handleClose}>
@@ -102,7 +105,7 @@ function Register(props) {
           </span>
         </Modal.Body>
       </Modal>
-    </>
+    </div>
   );
 }
 

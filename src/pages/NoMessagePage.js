@@ -1,19 +1,19 @@
-import LeftMenu from "../component/LeftMenu";
+import MessageList from "../component/MessageList";
 import Header from "../component/Header";
-import CreatePost from "../component/CreatePost";
+import NoMessage from "../component/NoMessage";
 
-function CreatePostPage() {
+function NoMessagePage() {
   return (
     <div>
       <Header />
       <div className="nav-container">
         <div className="home-left">
-          <LeftMenu />
+          <MessageList />
         </div>
         <div className="home-right">
           <div>
             <div className="d-flex justify-content-center">
-              <CreatePost />
+              <NoMessage />
             </div>
           </div>
         </div>
@@ -22,4 +22,4 @@ function CreatePostPage() {
   );
 }
 
-export default CreatePostPage;
+export default NoMessagePage;

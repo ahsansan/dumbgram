@@ -12,6 +12,8 @@ import FeedPage from "./pages/FeedPage";
 import ProfilePage from "./pages/ProfilePage";
 import CreatePostPage from "./pages/CreatePostPage";
 import EditProfilePage from "./pages/EditProfilePage";
+import NoMessagePage from "./pages/NoMessagePage";
+import MessageZaynPage from "./pages/MessagesZaynPage";
 
 function App() {
   return (
@@ -25,6 +27,8 @@ function App() {
           <Route exact path="/profile" element={<ProfilePage />} />
           <Route exact path="/create-post" element={<CreatePostPage />} />
           <Route exact path="/edit-profile" element={<EditProfilePage />} />
+          <Route exact path="/message" element={<NoMessagePage />} />
+          <Route exact path="/message-zayn" element={<MessageZaynPage />} />
         </Routes>
       </Router>
     </div>
