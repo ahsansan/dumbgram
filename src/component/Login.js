@@ -33,7 +33,6 @@ function Login(props) {
                 name="email"
                 id="email"
                 placeholder="Email"
-                autoComplete="false"
               />
             </Form.Group>
             <Form.Group>
@@ -43,7 +42,6 @@ function Login(props) {
                 name="password"
                 id="password"
                 placeholder="Password"
-                autoComplete="false"
               />
             </Form.Group>
             <a href="/feed">
