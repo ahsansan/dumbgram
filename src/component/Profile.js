@@ -41,12 +41,12 @@ function LeftMenu() {
               <div className="tombol-action">
                 <ul>
                   <li>
-                    <a href="/message-zayn" className="login-messeges-button">
+                    <a href="/message-detail" className="login-messeges-button">
                       Messeges
                     </a>
                   </li>
                   <li>
-                    <a href="/unfollow" className="login-unfollow-button">
+                    <a href="/" className="login-unfollow-button">
                       Unfollow
                     </a>
                   </li>

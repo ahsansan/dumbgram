@@ -28,7 +28,7 @@ function App() {
           <Route exact path="/create-post" element={<CreatePostPage />} />
           <Route exact path="/edit-profile" element={<EditProfilePage />} />
           <Route exact path="/message" element={<NoMessagePage />} />
-          <Route exact path="/message-zayn" element={<MessageZaynPage />} />
+          <Route exact path="/message-detail" element={<MessageZaynPage />} />
         </Routes>
       </Router>
     </div>

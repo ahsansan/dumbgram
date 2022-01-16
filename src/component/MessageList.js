@@ -27,7 +27,7 @@ function MessageList() {
             />
           </div>
           <div className="dm-content">
-            <a href="/message-zayn">
+            <a href="/message-detail">
               <p className="dm-person-name">{msg.name}</p>
               <p className="dm-person-message">{msg.message}</p>
             </a>
