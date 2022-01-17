@@ -9,6 +9,7 @@ function MessageZayn() {
           <img
             className="detail-dm-circlement"
             src={process.env.PUBLIC_URL + "/images/photos/Zayn.png"}
+            alt="Orang"
           />
         </div>
         <div className="detail-dm-content">

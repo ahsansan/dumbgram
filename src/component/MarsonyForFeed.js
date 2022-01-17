@@ -34,6 +34,7 @@ export default function MansoryForFeed(props) {
                 className="images"
                 onClick={handleShow}
                 src={process.env.PUBLIC_URL + `${feed.image}`}
+                alt="Gambar Feed"
               />
             </div>
             <div className="feed-keterangan">

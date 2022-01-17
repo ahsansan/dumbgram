@@ -9,6 +9,7 @@ export default function MansoryForExplore(props) {
           src={process.env.PUBLIC_URL + `${img}`}
           key={index}
           className="images-explore"
+          alt="Gambar Explore"
         />
       ))}
     </div>

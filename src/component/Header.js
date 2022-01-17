@@ -1,16 +1,9 @@
-// Hook
-import { useState } from "react";
-
 // Custom Css
 import "../styles/components/header.css";
 
 // FontAwesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faPlus,
-  faPaperPlane,
-  faBell,
-} from "@fortawesome/free-solid-svg-icons";
+import { faPlus, faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 
 // React Router Dom
 import { Link } from "react-router-dom";

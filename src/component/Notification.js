@@ -48,6 +48,7 @@ function Notification(props) {
                 <img
                   className="notif-circlement"
                   src={process.env.PUBLIC_URL + `${notif.photo}`}
+                  alt="Gambar Notif"
                 />
               </div>
               <div className="notif-content">
