@@ -1,9 +1,34 @@
-// Custom Css
+// React Responsive Masonry
+import Masonry from "react-responsive-masonry";
+// Custom CSS
 import "../styles/components/feed.css";
-// Mansory Elements
-import MansoryForFeed from "./MarsonyForFeed";
+// FontAwesome
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faComment,
+  faHeart,
+  faPaperPlane,
+} from "@fortawesome/free-regular-svg-icons";
+// Import React Router DOM
+import { Link } from "react-router-dom";
+// OAS
+import Aos from "aos";
+import "aos/dist/aos.css";
+// Hooks
+import { useState, useEffect } from "react";
+// Detail Feed
+import DetailFeed from "./DetailFeed";
 
-function FeedMansory() {
+function Feed() {
+  // Animation
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
+  // Detail Feed Modal
+  const [show, setShow] = useState(false);
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+  // Data Feed
   const imagesFeed = [
     {
       id: 1,
@@ -64,12 +89,49 @@ function FeedMansory() {
   ];
 
   return (
-    <div>
-      <div className="mansory-container">
-        <MansoryForFeed imagesFeed={imagesFeed}></MansoryForFeed>
-      </div>
+    <div data-aos="fade-up">
+      <Masonry columnsCount={3}>
+        {imagesFeed.map((feed) => (
+          <div className="feed-container">
+            <div className="feed-gambar">
+              <img
+                onClick={handleShow}
+                alt="Gambar Feed"
+                key={feed.id}
+                src={process.env.PUBLIC_URL + `${feed.image}`}
+                className="images-feed"
+              />
+            </div>
+            <div className="feed-keterangan">
+              <div className="prof-box">
+                <div className="profile">
+                  <img
+                    src={process.env.PUBLIC_URL + `${feed.ppuploader}`}
+                    className="card-profiles"
+                    alt="pp"
+                  />
+                  <p className="post-name">
+                    <Link to="/profile">{feed.uploader}</Link>
+                  </p>
+                </div>
+                <div className="icon-container">
+                  <FontAwesomeIcon className="card-icon" icon={faHeart} />
+                  <FontAwesomeIcon className="card-icon" icon={faComment} />
+                  <FontAwesomeIcon className="card-icon" icon={faPaperPlane} />
+                </div>
+              </div>
+            </div>
+            <div className="navlike">
+              <div>
+                <p className="like-total">{feed.like}</p>
+              </div>
+            </div>
+          </div>
+        ))}
+        <DetailFeed show={show} handleClose={handleClose} />
+      </Masonry>
     </div>
   );
 }
 
-export default FeedMansory;
+export default Feed;

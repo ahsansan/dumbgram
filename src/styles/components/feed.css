@@ -1,12 +1,4 @@
-.masonry-style-feed {
-  column-gap: 0;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: masonry;
-  width: 100%;
-}
-
-.images {
+.images-feed {
   display: block;
   width: 90%;
   margin: 15px;
@@ -15,7 +7,7 @@
 }
 
 .feed-container {
-  padding: 15px;
+  padding: 5px;
   display: flex;
   justify-content: center;
   box-sizing: border-box;
@@ -60,6 +52,7 @@
   flex: 1;
   display: flex;
   justify-content: end;
+  padding-right: 15px;
 }
 
 .card-icon {
@@ -69,7 +62,7 @@
 
 .navlike {
   text-align: end;
-  padding-right: 10px;
+  padding-right: 15px;
 }
 
 .like-total {

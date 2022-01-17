@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 
 function Login(props) {
   const [show, setShow] = useState(props.isOpen);
-  const handleClose = () => setShow(false);
+  const handleLoginClose = () => setShow(false);
 
   // Register
   const [showRegisterModal, setRegisterModal] = useState(false);
@@ -24,7 +24,7 @@ function Login(props) {
     <div>
       {/* Modal */}
       {showRegisterModal && <Register isOpen={true} />}
-      <Modal dialogClassName="info-modal" show={show} onHide={handleClose}>
+      <Modal dialogClassName="info-modal" show={show} onHide={handleLoginClose}>
         <Modal.Body>
           <Modal.Title className="form-auth-h">Login</Modal.Title>
           <Form>

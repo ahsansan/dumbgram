@@ -1,13 +1,5 @@
 // Bootstrap
-import {
-  Modal,
-  Card,
-  Col,
-  Row,
-  Form,
-  Navbar,
-  Container,
-} from "react-bootstrap";
+import { Modal } from "react-bootstrap";
 // Custom CSS
 import "../styles/components/detailfeed.css";
 // FonstAwesome
@@ -17,9 +9,24 @@ import {
   faHeart,
   faPaperPlane,
 } from "@fortawesome/free-regular-svg-icons";
+import { Link } from "react-router-dom";
+import { faPlane } from "@fortawesome/free-solid-svg-icons";
 
 function DetailFeed(props) {
   const { show, handleClose } = props;
+
+  const comments = [
+    {
+      name: "Lisa",
+      photo: "/images/photos/Lisa.png",
+      comment: "Gokil sih bro",
+    },
+    {
+      name: "Ahsan",
+      photo: "/images/photos/Ahsan.jpg",
+      comment: "Keren tempatnya kak",
+    },
+  ];
 
   return (
     <div>
@@ -30,96 +37,73 @@ function DetailFeed(props) {
         className="modalleft"
         dialogClassName="info-modal-feed"
       >
-        <Modal.Body className="modallg">
-          <Row>
-            {/* feed gambar */}
-            <Col className="gambarfeed">
-              <Card style={{ width: "18rem" }} className="bgcard">
-                <Card.Img
-                  variant="top"
-                  src={process.env.PUBLIC_URL + "/images/photos/Detail.png"}
-                  className="gambardetail"
+        <div className="detail-container">
+          <div className="detail-image">
+            <img
+              src={process.env.PUBLIC_URL + "/images/photos/Detail.png"}
+              alt="Detail"
+              className="gambarfeed"
+            />
+          </div>
+          <div className="detail-lain">
+            <div className="detail-uploader">
+              <div className="foto-uploader">
+                <img
+                  src={process.env.PUBLIC_URL + "/images/photos/Zayn.png"}
+                  alt="Uploader"
                 />
-              </Card>
-            </Col>
-            {/* feed coment */}
-            <Col lg={4}>
-              <Card style={{ width: "17rem" }} className="cardcoment">
-                <div className="circlement">
-                  <a href="/profile">
-                    <Card.Img
-                      variant="top"
-                      src={process.env.PUBLIC_URL + "/images/photos/Zayn.png"}
-                      className="profilement mlprof"
-                    />
-                  </a>
-                  <p className="nameprofilement">Zayn</p>
-                </div>
-                <p className="captioncoment">To Begin Again</p>
-                <hr className="garis" />
-                {/* Komen */}
-                <div className="container-coment">
-                  <Card.Img
-                    variant="top"
-                    src={process.env.PUBLIC_URL + "/images/photos/Lisa.png"}
-                    className="profilement"
+              </div>
+              <div className="data-uploader">
+                <Link to="/profile">
+                  <p className="nama-uploader">Zayn</p>
+                </Link>
+                <p className="caption-uploader">To begin again</p>
+              </div>
+            </div>
+            {comments.map((comment, index) => (
+              <div className="detail-komen" key={index}>
+                <div className="foto-komen">
+                  <img
+                    src={process.env.PUBLIC_URL + `${comment.photo}`}
+                    alt="Komenter"
                   />
-                  <p className="nameprofilement">Lisa</p>
                 </div>
-                <p className="captioncoment">Nice Place</p>
-                <div className="container-coment">
-                  <Card.Img
-                    variant="top"
-                    src={process.env.PUBLIC_URL + "/images/photos/Lisa.png"}
-                    className="profilement"
-                  />
-                  <p className="nameprofilement">Lisa</p>
+                <div className="data-komen">
+                  <p className="nama-komen">{comment.name}</p>
+                  <p className="caption-komen">{comment.comment}</p>
                 </div>
-                <p className="captioncoment">Good Vibe</p>
-                <Form className="inputcoment">
-                  <Navbar className="iconment">
-                    <Container>
-                      <Navbar.Collapse className="justify-content-end">
-                        <Navbar.Text className="icon3">
-                          <FontAwesomeIcon
-                            className="card-icon heart hearts"
-                            icon={faHeart}
-                            size="lg"
-                          />
-                          <FontAwesomeIcon
-                            className="card-icon comment comments"
-                            icon={faComment}
-                            size="lg"
-                          />
-                          <FontAwesomeIcon
-                            className="card-icon"
-                            icon={faPaperPlane}
-                            size="lg"
-                          />
-                        </Navbar.Text>
-                      </Navbar.Collapse>
-                    </Container>
-                  </Navbar>
-                  <Navbar>
-                    <Container>
-                      <Navbar.Collapse className="justify-content-end">
-                        <Navbar.Text className="likements">
-                          <span>156.100 Like</span>
-                        </Navbar.Text>
-                      </Navbar.Collapse>
-                    </Container>
-                  </Navbar>
-                  <Form.Control
-                    className="form-controls inputcoment"
-                    type="text"
-                    placeholder="Comment"
-                  />{" "}
-                  <br />
-                </Form>
-              </Card>
-            </Col>
-          </Row>
-        </Modal.Body>
+              </div>
+            ))}
+            <div className="reaction-container">
+              <div className="icon-icon">
+                <FontAwesomeIcon
+                  className="card-icon heart hearts"
+                  icon={faHeart}
+                  size="lg"
+                />
+                <FontAwesomeIcon
+                  className="card-icon heart hearts"
+                  icon={faComment}
+                  size="lg"
+                />
+                <FontAwesomeIcon
+                  className="card-icon heart hearts"
+                  icon={faPaperPlane}
+                  size="lg"
+                />
+              </div>
+              <div className="likers">
+                <p>127.135 Like</p>
+              </div>
+              <div className="kolom-komentar">
+                <input type="text" placeholder="Comment" />
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* <div>
+          <img src={process.env.PUBLIC_URL + `${props.feed.image}`} key={props.feed.id} alt="Gambar Feed" />
+        </div> */}
       </Modal>
     </div>
   );

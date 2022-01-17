@@ -2,6 +2,8 @@ import LeftMenu from "../component/LeftMenu";
 import Header from "../component/Header";
 import Feed from "../component/Feed";
 
+import { Col, Row } from "react-bootstrap";
+
 function ExplorePage() {
   return (
     <div>
@@ -12,7 +14,7 @@ function ExplorePage() {
         </div>
         <div className="home-right">
           <div>
-            <div className="d-flex justify-content-center">
+            <div>
               <Feed />
             </div>
           </div>
