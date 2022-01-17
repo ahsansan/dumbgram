@@ -13,7 +13,7 @@ function ProfilePage() {
         <div className="home-right">
           <div>
             <h1 className="ps-5">Hey, Zayn</h1>
-            <div className="d-flex justify-content-center">
+            <div>
               <Feed />
             </div>
           </div>

@@ -1,5 +1,5 @@
 // useState
-import { useState } from "react";
+import { useState, useEffect } from "react";
 // Register
 import Register from "../component/Register";
 // Login
@@ -13,6 +13,10 @@ function Welcome() {
   // register
   const [isClickRegister, setClickRegister] = useState(false);
   const handleClickRegister = () => setClickRegister(!isClickRegister);
+
+  useEffect(() => {
+    console.log(isClickLogin);
+  }, [isClickLogin]);
 
   return (
     <div>

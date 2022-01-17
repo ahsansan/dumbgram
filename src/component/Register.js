@@ -10,7 +10,7 @@ import Login from "./Login";
 function Register(props) {
   // register
   const [show, setShow] = useState(props.isOpen);
-  const handleClose = () => setShow(false);
+  const handleRegisterClose = () => setShow(false);
 
   // login
   const [showLogin, setShowLogin] = useState(false);
@@ -45,7 +45,11 @@ function Register(props) {
     <div>
       {/* Modal */}
       {showLogin && <Login isOpen={true} />}
-      <Modal dialogClassName="info-modal" show={show} onHide={handleClose}>
+      <Modal
+        dialogClassName="info-modal"
+        show={show}
+        onHide={handleRegisterClose}
+      >
         <Modal.Body>
           <Modal.Title className="form-auth-h">Register</Modal.Title>
           <Form onSubmit={handleOnSubmit}>
