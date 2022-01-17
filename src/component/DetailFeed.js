@@ -9,8 +9,8 @@ import {
   faHeart,
   faPaperPlane,
 } from "@fortawesome/free-regular-svg-icons";
+// React Router Dom
 import { Link } from "react-router-dom";
-import { faPlane } from "@fortawesome/free-solid-svg-icons";
 
 function DetailFeed(props) {
   const { show, handleClose } = props;
