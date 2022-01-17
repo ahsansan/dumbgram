@@ -1,5 +1,10 @@
 // Hooks
-import { useState } from "react";
+import { useState, useEffect } from "react";
+
+// OAS
+// ------------- Aos --------------
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 // Custom-Css
 import "../styles/components/feed.css";
@@ -19,13 +24,17 @@ import { Link } from "react-router-dom";
 import DetailFeed from "../component/DetailFeed";
 
 export default function MansoryForFeed(props) {
+  // Animation
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
   // Detail Feed
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
   return (
-    <div className="masonry-style-feed">
+    <div className="masonry-style-feed" data-aos="fade-up">
       {props.imagesFeed.map((feed) => (
         <div key={feed.id}>
           <div className="feed-container">
