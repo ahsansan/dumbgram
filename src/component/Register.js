@@ -44,7 +44,7 @@ function Register(props) {
   return (
     <div>
       {/* Modal */}
-      {showLogin ? <Login isOpen={true} /> : null}
+      {showLogin && <Login isOpen={true} />}
       <Modal dialogClassName="info-modal" show={show} onHide={handleClose}>
         <Modal.Body>
           <Modal.Title className="form-auth-h">Register</Modal.Title>

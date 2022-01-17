@@ -3,7 +3,7 @@ import "./styles/styles.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 // Import React Router DOM
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 // Import Page
 import LandingPage from "./pages/LandingPage";

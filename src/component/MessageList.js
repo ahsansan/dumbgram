@@ -1,5 +1,7 @@
 // Custom CSS
 import "../styles/components/messagelist.css";
+// React Router Dom
+import { Link } from "react-router-dom";
 
 function MessageList() {
   const messages = [
@@ -27,10 +29,10 @@ function MessageList() {
             />
           </div>
           <div className="dm-content">
-            <a href="/message-detail">
+            <Link to="/message-detail">
               <p className="dm-person-name">{msg.name}</p>
               <p className="dm-person-message">{msg.message}</p>
-            </a>
+            </Link>
           </div>
         </div>
       ))}

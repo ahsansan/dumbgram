@@ -9,6 +9,8 @@ import {
   faHome,
   faCompass,
 } from "@fortawesome/free-solid-svg-icons";
+// React Router Dom
+import { Link } from "react-router-dom";
 
 function LeftMenu() {
   const profiles = [
@@ -29,9 +31,9 @@ function LeftMenu() {
         {profiles.map((profile, index) => (
           <div key={index}>
             <div className="left-menu-edit-container">
-              <a href="/edit-profile">
+              <Link to="/edit-profile">
                 <FontAwesomeIcon className="icon-notifikasi" icon={faEdit} />
-              </a>
+              </Link>
             </div>
             <div className="left-menu-up">
               <div>
@@ -66,22 +68,22 @@ function LeftMenu() {
               <hr />
               <ul>
                 <li>
-                  <a href="/feed">
+                  <Link to="/feed">
                     <FontAwesomeIcon
                       className="icon-notifikasi"
                       icon={faHome}
                     />{" "}
                     Home
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="/explore">
+                  <Link to="/explore">
                     <FontAwesomeIcon
                       className="icon-notifikasi"
                       icon={faCompass}
                     />{" "}
                     Explore
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -89,13 +91,13 @@ function LeftMenu() {
               <hr />
               <ul>
                 <li>
-                  <a href="/">
+                  <Link to="/">
                     <FontAwesomeIcon
                       className="icon-notifikasi"
                       icon={faSignInAlt}
                     />{" "}
                     Logout
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>

@@ -12,6 +12,9 @@ import {
   faBell,
 } from "@fortawesome/free-solid-svg-icons";
 
+// React Router Dom
+import { Link } from "react-router-dom";
+
 // Notification
 import Notification from "./Notification";
 
@@ -19,12 +22,12 @@ function Header() {
   return (
     <div className="nav-container">
       <div className="nav-head">
-        <a href="/feed">
+        <Link to="/feed">
           <img
             src={process.env.PUBLIC_URL + "/images/DumbGramIcon.png"}
             alt="DumbGram"
           />
-        </a>
+        </Link>
       </div>
       <div className="nav-left">
         <input
@@ -40,24 +43,24 @@ function Header() {
               <Notification />
             </li>
             <li>
-              <a href="/message">
+              <Link to="/message">
                 <FontAwesomeIcon
                   className="icon-notifikasi"
                   icon={faPaperPlane}
                 />
-              </a>
+              </Link>
             </li>
           </ul>
           <ul>
             <li>
-              <a className="create-post" href="/create-post">
+              <Link className="create-post" to="/create-post">
                 <span className="plusquar">
                   <span>
                     <FontAwesomeIcon className="icon-plus" icon={faPlus} />
                   </span>
                 </span>{" "}
                 &nbsp; <span> Create Post</span>
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

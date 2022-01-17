@@ -12,6 +12,9 @@ import {
   faPaperPlane,
 } from "@fortawesome/free-regular-svg-icons";
 
+// React Router Dom
+import { Link } from "react-router-dom";
+
 // Detail Feed
 import DetailFeed from "../component/DetailFeed";
 
@@ -42,7 +45,7 @@ export default function MansoryForFeed(props) {
                     alt="pp"
                   />
                   <p className="post-name">
-                    <a href="/profile">{feed.uploader}</a>
+                    <Link to="/profile">{feed.uploader}</Link>
                   </p>
                 </div>
                 <div className="icon-container">

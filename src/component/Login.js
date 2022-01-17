@@ -6,6 +6,8 @@ import { Form, Button, Modal } from "react-bootstrap";
 import "../styles/components/auth.css";
 // Import Component
 import Register from "./Register";
+// React Router Dom
+import { Link } from "react-router-dom";
 
 function Login(props) {
   const [show, setShow] = useState(props.isOpen);
@@ -21,7 +23,7 @@ function Login(props) {
   return (
     <div>
       {/* Modal */}
-      {showRegisterModal ? <Register isOpen={true} /> : null}
+      {showRegisterModal && <Register isOpen={true} />}
       <Modal dialogClassName="info-modal" show={show} onHide={handleClose}>
         <Modal.Body>
           <Modal.Title className="form-auth-h">Login</Modal.Title>
@@ -44,9 +46,9 @@ function Login(props) {
                 placeholder="Password"
               />
             </Form.Group>
-            <a href="/feed">
+            <Link to="/feed">
               <Button className="form-auth-button">Login</Button>
-            </a>
+            </Link>
           </Form>
           <span
             onClick={handleModalRegister}
