@@ -9,8 +9,9 @@
 .info-modal-notification .modal-content {
   background-color: #1f1f1f !important;
   border: 0 solid black !important;
-  border-radius: 15px !important;
-  padding: 20px 20px !important;
+  border-radius: 20px !important;
+  padding: 10px 10px !important;
+  width: 350px;
 }
 
 .notif-container {
@@ -24,6 +25,12 @@
   flex-direction: row;
   width: 100%;
   margin-bottom: 5px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.notif-by-person:hover {
+  background-color: #535353;
 }
 
 .notif-photo {
@@ -34,7 +41,6 @@
 
 .notif-content {
   flex: 80%;
-  cursor: pointer;
   padding: 10px;
 }
 

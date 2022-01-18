@@ -11,16 +11,22 @@
   width: 90%;
   padding-left: 15px;
   padding-top: 10px;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+.dm-by-person:hover {
+  background-color: #535353;
 }
 
 .dm-photo {
   flex: 20%;
+  padding-top: 5px;
 }
 
 .dm-content {
   flex: 80%;
   display: block;
-  cursor: pointer;
 }
 
 .dm-content a {

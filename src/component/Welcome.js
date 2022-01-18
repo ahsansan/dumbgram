@@ -14,10 +14,6 @@ function Welcome() {
   const [isClickRegister, setClickRegister] = useState(false);
   const handleClickRegister = () => setClickRegister(!isClickRegister);
 
-  useEffect(() => {
-    console.log(isClickLogin);
-  }, [isClickLogin]);
-
   return (
     <div>
       {/* <h1 className="lp-dumbgram">DumbGram</h1> */}
