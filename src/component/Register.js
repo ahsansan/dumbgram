@@ -10,7 +10,9 @@ import Login from "./Login";
 function Register(props) {
   // register
   const [show, setShow] = useState(props.isOpen);
-  const handleRegisterClose = () => setShow(false);
+  const handleRegisterClose = () => {
+    setShow(false);
+  };
 
   // login
   const [showLogin, setShowLogin] = useState(false);
@@ -42,7 +44,7 @@ function Register(props) {
   };
 
   return (
-    <div>
+    <>
       {/* Modal */}
       {showLogin && <Login isOpen={true} />}
       <Modal
@@ -109,7 +111,7 @@ function Register(props) {
           </span>
         </Modal.Body>
       </Modal>
-    </div>
+    </>
   );
 }
 

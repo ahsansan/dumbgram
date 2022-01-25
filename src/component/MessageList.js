@@ -26,7 +26,7 @@ function MessageList() {
             <img
               className="dm-circlement"
               src={process.env.PUBLIC_URL + `${msg.photo}`}
-              alt="Photo Profile"
+              alt="Profile"
             />
           </div>
           <div className="dm-content">

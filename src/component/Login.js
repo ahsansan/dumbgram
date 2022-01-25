@@ -11,7 +11,9 @@ import { Link } from "react-router-dom";
 
 function Login(props) {
   const [show, setShow] = useState(props.isOpen);
-  const handleLoginClose = () => setShow(false);
+  const handleLoginClose = () => {
+    setShow(false);
+  };
 
   // Register
   const [showRegisterModal, setRegisterModal] = useState(false);

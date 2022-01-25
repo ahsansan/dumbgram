@@ -1,5 +1,5 @@
 // useState
-import { useState, useEffect } from "react";
+import { useState } from "react";
 // Register
 import Register from "../component/Register";
 // Login
